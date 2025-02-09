@@ -1,0 +1,191 @@
+body {
+    background-color: white;
+}
+.bg-282E3C{
+    background-color: #282E3C;
+}
+.bg-ADB2BA{
+    background-color: #ADB2BA;
+}
+
+
+.headercontainer {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url("backgroundlight.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+    width: 100wh;
+
+}
+
+.headercontainer a {
+    color: #ADB2BA;
+}
+
+#headerelements a:hover {
+    background-color: #ADB2BA;
+    color: #282E3C;
+
+}
+
+#headermyselfcolumn {
+
+    margin-top: 20px;
+    color: #ADB2BA;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+}
+
+#headermyselfcolumnfirst {
+
+    margin-top: 50px;
+    color: #ADB2BA;
+}
+
+#aboutmeheading {
+    color: #282E3C;
+    text-shadow: 0px -20px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.aboutme {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.aboutdetails {
+    border: 2px solid black;
+    background-color: #282E3C;
+}
+
+.grid-container {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+
+
+
+
+/* Container styles */
+.containerabout {
+    padding-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-shrink: 0 0;
+}
+
+
+.columnone {
+    margin-left: 10px;
+    width: 30%;
+    
+    /* Each column takes up half of the container width */
+
+}
+
+.columnone img {
+    margin-top: 30px;
+    height: 90%;
+    width: 100%;
+    border-radius: 12px;
+    opacity:1;
+}
+
+.columntwo {
+    width: 70%;
+    margin-left: 15px;
+    /* border: 2px solid black; */
+}
+
+.columntwo li {
+    
+    list-style: none;
+}
+.aboutachievements{
+    width:100%;
+}
+
+.resumeheading{
+   color: #282E3C;
+    text-shadow: 0px -20px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    text-align: center;
+}
+
+#servicescard:hover{
+    border:2px solid #69644D; 
+    color:#69644D;   
+}
+#portfolioo img{
+    transition: transform 0.3s ease; 
+
+}
+#portfolioo img:hover{
+    transform: scale(1.1); 
+}
+ #submitbtn{
+    background-color: #282E3C;
+    color:#ADB2BA;
+ }
+ #submitbtn:hover{
+    color:#282E3C;
+    background-color: #ADB2BA;
+ }
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 725px) {
+    .containerabout {
+        flex-direction: column;
+    }
+
+    .columnone {
+        
+        margin-left: 30px;
+        margin-right: 30px;
+        width: 80%;
+        height: 50%;
+    }
+
+    .columnone img {
+        height: 40vh;
+        width: 10wh;
+    }
+
+    
+
+    .columntwo {
+        margin-top: 15px;
+        padding-right: 10px;
+        /* background-color: yellow; */
+        width: 100%;
+        font-size: 0.7rem;
+    }
+}
