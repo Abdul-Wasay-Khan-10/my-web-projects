@@ -1,0 +1,154 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Search Form */
+#Searchform {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto 20px;
+}
+
+#Searchform input {
+    padding: 10px;
+    font-size: 16px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#Searchform button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#Searchform button:hover {
+    background-color: #0056b3;
+}
+
+/* Loader */
+#loader {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Results Container */
+#results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Show Card */
+.show-card {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.show-card:hover {
+    transform: scale(1.05);
+}
+
+.show-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.show-card h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.show-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #222;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#theme-toggle:hover {
+    background: #444;
+}
+
+/* Dark Mode for Cards */
+.dark-mode .show-card {
+    background: #222;
+    color: white;
+}
+
+.dark-mode #Searchform {
+    background: #333;
+}
+
+.dark-mode #Searchform input {
+    background: #555;
+    color: white;
+    border: none;
+}
+
+.dark-mode #Searchform button {
+    background-color: #ff5722;
+}
+
+.dark-mode #Searchform button:hover {
+    background-color: #e64a19;
+}

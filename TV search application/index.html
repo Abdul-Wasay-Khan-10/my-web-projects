@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Show Search</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+    <!-- Dark Mode Toggle -->
+    <button id="theme-toggle">🌙 Dark Mode</button>
+
+    <h1>🎬 TV Show Search</h1>
+    <p>Find details of your favorite TV shows!</p>
+
+    <!-- Search Form -->
+    <form id="Searchform">
+        <input type="text" name="query" placeholder="Search for a TV show..." autocomplete="off">
+        <button type="submit">🔍 Search</button>
+    </form>
+
+    <!-- Loader -->
+    <div id="loader" class="hidden">⏳ Loading...</div>
+
+    <!-- Results Container -->
+    <div id="results"></div>
+
+    <script src="tvshow.js"></script>
+</body>
+</html>
